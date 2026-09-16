@@ -16,6 +16,7 @@
       "name": "The Italian Renaissance",
       "description": "The Denon wing's Salle des \u00c9tats and neighboring galleries, home to the Louvre's Italian masters.",
       "wallTone": "warm",
+      "interiorCommonsFile": "Endless_Louvre_Hall.jpg",
       "artworks": [
         {
           "id": "mona-lisa",
@@ -101,6 +102,7 @@
       "name": "The Grand Gallery of French Painting",
       "description": "The Louvre's sweep of 18th- and 19th-century French history painting, hung floor to cornice.",
       "wallTone": "dark",
+      "interiorCommonsFile": "法國羅浮宮51.jpg",
       "artworks": [
         {
           "id": "liberty-leading-the-people",
@@ -171,6 +173,7 @@
       "name": "The Hall of Antiquities",
       "description": "The ground-floor sculpture halls of the Sully and Denon wings, where Greco-Roman marble stands under skylights.",
       "wallTone": "stone",
+      "interiorCommonsFile": "Cour Marly, Musée du Louvre from Paris.jpg",
       "artworks": [
         {
           "id": "venus-de-milo",
@@ -241,6 +244,7 @@
       "name": "The Northern Cabinet",
       "description": "A quieter, intimately scaled room of Dutch and French court painting.",
       "wallTone": "neutral",
+      "interiorCommonsFile": "Rubens-Saal, Louvre.jpg",
       "artworks": [
         {
           "id": "the-lacemaker",
@@ -279,6 +283,7 @@
       "name": "The Egyptian Crypt",
       "description": "Low-lit galleries of the Sully wing's Egyptian antiquities department, one of the largest collections outside Cairo.",
       "wallTone": "stone",
+      "interiorCommonsFile": "Room 338-IMG 8378.JPG",
       "artworks": [
         {
           "id": "seated-scribe",

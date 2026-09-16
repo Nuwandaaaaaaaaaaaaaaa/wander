@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "@/lib/gsap";
 import type { Room, Artwork } from "@/types/museum";
 import { ArtworkFrame } from "./ArtworkFrame";
 import { GalleryFigure } from "./GalleryFigure";
 import { useScroller } from "@/lib/scroll-context";
+import { commonsFileUrl } from "@/lib/wikimedia";
 
 const WALL_TONES: Record<
   Room["wallTone"],
@@ -117,6 +119,7 @@ export function RoomSection({
   }, [scrollerRef]);
 
   const midIndex = Math.floor((room.artworks.length - 1) / 2);
+  const hasPhoto = Boolean(room.interiorCommonsFile);
 
   return (
     <section
@@ -126,6 +129,34 @@ export function RoomSection({
       className="relative flex h-full flex-shrink-0 items-stretch overflow-hidden"
       style={{ background: tone.wall }}
     >
+      {/* A real photograph of the actual gallery (or its closest match) —
+          the room you're standing in, not an illustration of one. */}
+      {room.interiorCommonsFile && (
+        <div className="pointer-events-none absolute inset-0" aria-hidden>
+          <Image
+            src={commonsFileUrl(room.interiorCommonsFile, 1600)}
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover"
+            style={{ objectPosition: "center 38%" }}
+            unoptimized
+            priority={index === 0}
+          />
+          {/* Darken and tint toward the room's tone so real photography and
+              the illustrated visitors/frames read as one lit space. */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(8,7,6,0.6) 0%, rgba(8,7,6,0.18) 26%, rgba(8,7,6,0.32) 58%, rgba(8,7,6,0.88) 100%)," +
+                "linear-gradient(90deg, rgba(8,7,6,0.7) 0%, transparent 14%, transparent 86%, rgba(8,7,6,0.7) 100%)",
+            }}
+          />
+          <div className="absolute inset-0" style={{ background: tone.wall, opacity: 0.3, mixBlendMode: "multiply" }} />
+        </div>
+      )}
+
       {/* Ambient spotlight glow, centered on the room */}
       <div
         className="pointer-events-none absolute inset-y-0 left-1/2 w-[60vw] -translate-x-1/2"
@@ -134,17 +165,22 @@ export function RoomSection({
         }}
       />
 
-      {/* Picture rail + baseboard mouldings, for an actual room feel */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-[14vh] h-px"
-        style={{ background: tone.rail }}
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-[9vh] h-px"
-        style={{ background: tone.rail }}
-      />
+      {/* Picture rail + baseboard mouldings — only drawn when there's no
+          real photograph doing that job already */}
+      {!hasPhoto && (
+        <>
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 top-[14vh] h-px"
+            style={{ background: tone.rail }}
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-[9vh] h-px"
+            style={{ background: tone.rail }}
+          />
+        </>
+      )}
 
       <div className="relative z-10 flex h-full items-center" style={{ paddingInline: "6vw", gap: "5vw" }}>
         {/* A visitor standing just inside the room, taking it in */}
@@ -174,14 +210,20 @@ export function RoomSection({
         </div>
       </div>
 
-      {/* Floor strip suggesting parquet running the direction of travel */}
+      {/* Floor strip — a faux parquet gradient where there's no photograph,
+          or just a soft grounding shadow where the real floor already shows */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[9vh] w-full opacity-70"
-        style={{
-          background: tone.floor,
-          backgroundImage: `${tone.floor}, repeating-linear-gradient(10deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 2px, transparent 2px, transparent 40px)`,
-        }}
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[9vh] w-full"
+        style={
+          hasPhoto
+            ? { background: "linear-gradient(180deg, transparent 0%, rgba(6,5,4,0.55) 100%)" }
+            : {
+                opacity: 0.7,
+                background: tone.floor,
+                backgroundImage: `${tone.floor}, repeating-linear-gradient(10deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 2px, transparent 2px, transparent 40px)`,
+              }
+        }
       />
 
       {/* An arched doorway ahead, glowing faintly with the next room's light */}

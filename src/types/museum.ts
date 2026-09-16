@@ -28,6 +28,12 @@ export interface Room {
   description?: string;
   /** Wall tone driving the CSS environment for this room */
   wallTone: "warm" | "neutral" | "dark" | "stone";
+  /**
+   * Wikimedia Commons filename of a real photograph of this room (or one
+   * matching its actual gallery), used as the room's backdrop so it reads
+   * as an actual museum space rather than an illustrated abstraction.
+   */
+  interiorCommonsFile?: string;
   artworks: Artwork[];
 }
 
