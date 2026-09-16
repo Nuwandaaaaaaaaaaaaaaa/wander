@@ -41,4 +41,11 @@ export interface Museum {
   rooms: Room[];
   /** false = scaffolded only, not a fully built tour yet */
   fullyBuilt: boolean;
+  /**
+   * Stylized (not strictly geographic) position on the map picker, as a
+   * percentage of the map's width/height from its top-left corner.
+   * Loosely follows real-world relative position but is spaced out for
+   * legibility rather than plotted to exact longitude/latitude.
+   */
+  mapPosition?: { x: number; y: number };
 }

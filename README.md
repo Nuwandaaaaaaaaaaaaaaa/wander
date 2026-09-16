@@ -1,14 +1,20 @@
 # Wander
 
-A scroll-driven virtual museum tour. Scrolling moves you through real
-gallery rooms; the mouse gives a subtle "look around" parallax rather than
-a free camera; every painting is a real, verified, public-domain work
-pulled from Wikimedia Commons, with a title, artist, year, medium and a
-link back to its source record. No fabricated data.
+A scroll-driven virtual museum tour. Scrolling walks you left to right
+down a real gallery hallway, room by room, the way you'd actually move
+through a building; the mouse gives a subtle "look around" parallax
+rather than a free camera; every painting is a real, verified,
+public-domain work pulled from Wikimedia Commons, with a title, artist,
+year, medium and a link back to its source record. No fabricated data.
+
+Pick a museum from the homepage grid, or from `/map` — a stylized pin
+picker, reached via the map icon — for a more spatial "choose your trip"
+way in.
 
 Built with Next.js (App Router, TypeScript), Tailwind CSS, Framer Motion,
-GSAP ScrollTrigger and Lenis for the smooth scroll, and the Web Audio API
-for a synthesized (not downloaded) ambient room tone.
+GSAP ScrollTrigger and Lenis (in horizontal mode) for the smooth scroll,
+and the Web Audio API for a synthesized (not downloaded) ambient room
+tone.
 
 ## Status
 
@@ -113,9 +119,17 @@ darkening rather than a hard cut.
      "tagline": "One sentence describing the collection.",
      "heroCommonsFile": "Exterior_or_hero_shot.jpg",
      "fullyBuilt": false,
+     "mapPosition": { "x": 50, "y": 50 },
      "rooms": []
    }
    ```
+
+   `mapPosition` places the museum's pin on `/map` — `x`/`y` are
+   percentages of the map's width/height from its top-left corner. It's
+   a stylized atlas, not a literal GPS map, so these are hand-picked for
+   legibility and rough relative position (west is left, north is up),
+   not plotted to exact coordinates. Omit it and the pin falls back to
+   dead center.
 
 2. Register it in `src/data/museums/index.ts`:
 
@@ -139,25 +153,40 @@ darkening rather than a hard cut.
 ```
 src/
   app/
-    page.tsx              museum picker (homepage)
+    page.tsx              museum picker (homepage grid)
+    map/page.tsx            museum picker (pin map)
     tour/[museum]/page.tsx  the tour route — renders TourExperience,
                              or a "coming soon" screen if !fullyBuilt
     layout.tsx             fonts + metadata
   components/
-    TourExperience.tsx     orchestrates a single museum visit
+    TourExperience.tsx     orchestrates a single museum visit — owns the
+                            horizontal scroll container + current-room state
     RoomSection.tsx        one gallery room: wall/floor CSS, threshold fade
     ArtworkFrame.tsx       one framed piece, scroll-linked reveal
     ParallaxWrapper.tsx    mouse "look around" effect
-    Minimap.tsx            fixed room-progress sidebar
+    Minimap.tsx            fixed room-progress bar
+    MuseumMap.tsx           the /map pin picker
     AmbientAudio.tsx       synthesized room tone + mute toggle
     InfoOverlay.tsx        click-to-zoom artwork detail modal
   data/museums/            one JSON file per museum + the registry
   lib/
     gsap.ts                registers the ScrollTrigger plugin once
-    useLenis.ts             smooth-scroll setup, reduced-motion aware
+    useLenis.ts             horizontal smooth-scroll setup, reduced-motion aware
+    scroll-context.tsx      shares the scroll container ref down to
+                             RoomSection/ArtworkFrame (GSAP + Framer Motion
+                             both need it explicitly since the hallway
+                             scrolls inside its own container, not the page)
     wikimedia.ts            Commons filename → image URL
   types/museum.ts           the shared data shapes
 ```
+
+The tour scrolls horizontally: `TourExperience` renders a fixed,
+full-viewport container and hands its ref down through `ScrollerContext`
+so `RoomSection`'s GSAP ScrollTriggers and `ArtworkFrame`'s Framer Motion
+`useScroll` both track that container's `scrollLeft` instead of the
+window. `useLenis`'s `useHorizontalLenis` remaps ordinary vertical wheel
+input onto that horizontal motion, since almost nobody has a
+horizontal-only mouse wheel.
 
 ## Accessibility
 

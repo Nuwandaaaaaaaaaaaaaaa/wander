@@ -27,3 +27,14 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* The tour hallway scrolls horizontally inside its own container —
+   Lenis drives that motion, so the native scrollbar is just visual
+   noise on top of it. */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

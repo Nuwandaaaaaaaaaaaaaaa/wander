@@ -5,6 +5,10 @@
   "country": "United States",
   "tagline": "Five thousand years of art history on Fifth Avenue.",
   "fullyBuilt": false,
+  "mapPosition": {
+    "x": 18,
+    "y": 42
+  },
   "rooms": [
     {
       "id": "european-paintings",
@@ -17,10 +21,13 @@
           "artist": "Jacques-Louis David",
           "year": "1787",
           "medium": "Oil on canvas",
-          "dimensions": "129.5 cm × 196.2 cm",
-          "description": "Socrates reaches for the cup of hemlock while continuing to lecture his grieving followers — Neoclassicism's model of philosophical composure in the face of death.",
+          "dimensions": "129.5 cm \u00d7 196.2 cm",
+          "description": "Socrates reaches for the cup of hemlock while continuing to lecture his grieving followers \u2014 Neoclassicism's model of philosophical composure in the face of death.",
           "commonsFile": "David_-_The_Death_of_Socrates.jpg",
-          "source": { "collection": "The Metropolitan Museum of Art, New York", "url": "https://en.wikipedia.org/wiki/The_Death_of_Socrates" },
+          "source": {
+            "collection": "The Metropolitan Museum of Art, New York",
+            "url": "https://en.wikipedia.org/wiki/The_Death_of_Socrates"
+          },
           "scale": 1.1,
           "spotlight": "featured"
         },
@@ -30,10 +37,13 @@
           "artist": "Vincent van Gogh",
           "year": "1889",
           "medium": "Oil on canvas",
-          "dimensions": "72.1 cm × 90.9 cm",
-          "description": "Painted from the asylum grounds at Saint-Rémy, its churning sky and flame-like cypress trees are among van Gogh's most turbulent late landscapes.",
+          "dimensions": "72.1 cm \u00d7 90.9 cm",
+          "description": "Painted from the asylum grounds at Saint-R\u00e9my, its churning sky and flame-like cypress trees are among van Gogh's most turbulent late landscapes.",
           "commonsFile": "Wheat-Field-with-Cypresses-(1889)-Vincent-van-Gogh-Met.jpg",
-          "source": { "collection": "The Metropolitan Museum of Art, New York", "url": "https://en.wikipedia.org/wiki/Wheat_Field_with_Cypresses" },
+          "source": {
+            "collection": "The Metropolitan Museum of Art, New York",
+            "url": "https://en.wikipedia.org/wiki/Wheat_Field_with_Cypresses"
+          },
           "scale": 1
         }
       ]

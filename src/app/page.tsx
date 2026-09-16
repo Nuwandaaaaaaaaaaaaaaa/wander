@@ -6,6 +6,16 @@ import { commonsFileUrl } from "@/lib/wikimedia";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#0e0c0b] text-[#e8e2d8]">
+      <Link
+        href="/map"
+        aria-label="Browse museums on a map"
+        className="fixed right-6 top-6 z-50 flex h-11 w-11 items-center justify-center rounded-full bg-black/40 text-[#e8e2d8] backdrop-blur-md transition hover:bg-black/60"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+          <path d="M9 20 3 17V4l6 3m0 13 6-3m-6 3V7m6 10 6 3V7l-6-3m0 13V4m0 3-6-3" />
+        </svg>
+      </Link>
+
       <section className="flex flex-col items-center px-6 pb-16 pt-24 text-center sm:pt-32">
         <p className="text-[10px] uppercase tracking-[0.35em] text-[#a89e8f]">
           A scroll-driven tour
@@ -18,6 +28,15 @@ export default function Home() {
           paintings and sculpture. Scroll to move, look around, click any
           piece to learn its story.
         </p>
+        <Link
+          href="/map"
+          className="mt-5 flex items-center gap-1.5 text-[10px] uppercase tracking-[0.2em] text-[#c9b998] transition hover:text-[#e8c98a]"
+        >
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M9 20 3 17V4l6 3m0 13 6-3m-6 3V7m6 10 6 3V7l-6-3m0 13V4m0 3-6-3" />
+          </svg>
+          Or pick one on the map
+        </Link>
       </section>
 
       <section className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-6 px-6 pb-28 sm:grid-cols-2 lg:grid-cols-3">

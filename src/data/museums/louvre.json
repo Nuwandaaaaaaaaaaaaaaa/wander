@@ -6,23 +6,30 @@
   "tagline": "The world's most visited museum, once a royal palace on the banks of the Seine.",
   "heroCommonsFile": "Louvre Museum Wikimedia Commons.jpg",
   "fullyBuilt": true,
+  "mapPosition": {
+    "x": 56,
+    "y": 38
+  },
   "rooms": [
     {
       "id": "italian-renaissance",
       "name": "The Italian Renaissance",
-      "description": "The Denon wing's Salle des États and neighboring galleries, home to the Louvre's Italian masters.",
+      "description": "The Denon wing's Salle des \u00c9tats and neighboring galleries, home to the Louvre's Italian masters.",
       "wallTone": "warm",
       "artworks": [
         {
           "id": "mona-lisa",
           "title": "Mona Lisa",
           "artist": "Leonardo da Vinci",
-          "year": "c. 1503–1519",
+          "year": "c. 1503\u20131519",
           "medium": "Oil on poplar panel",
-          "dimensions": "77 cm × 53 cm",
+          "dimensions": "77 cm \u00d7 53 cm",
           "description": "The most visited single artwork in the world, famed for its atmospheric sfumato and the sitter's ambiguous half-smile. Leonardo carried it with him for years, reworking it until his death.",
           "commonsFile": "Mona Lisa, by Leonardo da Vinci, from C2RMF retouched.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/Mona_Lisa" },
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/Mona_Lisa"
+          },
           "scale": 0.9,
           "spotlight": "featured"
         },
@@ -30,24 +37,30 @@
           "id": "virgin-child-st-anne",
           "title": "The Virgin and Child with Saint Anne",
           "artist": "Leonardo da Vinci",
-          "year": "c. 1503–1519",
+          "year": "c. 1503\u20131519",
           "medium": "Oil on poplar panel",
-          "dimensions": "168 cm × 130 cm",
+          "dimensions": "168 cm \u00d7 130 cm",
           "description": "Left unfinished at Leonardo's death, this pyramidal composition of three generations shows his late mastery of soft transitions between light and shadow.",
           "commonsFile": "Sainte_Anne_Leonard.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/The_Virgin_and_Child_with_Saint_Anne_(Leonardo)" },
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/The_Virgin_and_Child_with_Saint_Anne_(Leonardo)"
+          },
           "scale": 1.1
         },
         {
           "id": "la-belle-jardiniere",
-          "title": "La Belle Jardinière",
+          "title": "La Belle Jardini\u00e8re",
           "artist": "Raphael",
           "year": "1507",
           "medium": "Oil on panel",
-          "dimensions": "122 cm × 80 cm",
-          "description": "A Madonna and Child painted during Raphael's Florentine period, its title — \"the beautiful gardener\" — comes from the pastoral setting he gave the holy family.",
-          "commonsFile": "La_Vierge_à_l'Enfant_avec_le_petit_saint_Jean_Baptiste_-_Raphaël_-_Musée_du_Louvre_Peintures_INV_602_;_MR_433.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/La_belle_jardini%C3%A8re" },
+          "dimensions": "122 cm \u00d7 80 cm",
+          "description": "A Madonna and Child painted during Raphael's Florentine period, its title \u2014 \"the beautiful gardener\" \u2014 comes from the pastoral setting he gave the holy family.",
+          "commonsFile": "La_Vierge_\u00e0_l'Enfant_avec_le_petit_saint_Jean_Baptiste_-_Rapha\u00ebl_-_Mus\u00e9e_du_Louvre_Peintures_INV_602_;_MR_433.jpg",
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/La_belle_jardini%C3%A8re"
+          },
           "scale": 1
         },
         {
@@ -56,10 +69,13 @@
           "artist": "Paolo Veronese",
           "year": "1563",
           "medium": "Oil on canvas",
-          "dimensions": "677 cm × 994 cm",
-          "description": "The largest painting in the Louvre — a vast Venetian banquet scene depicting Christ's first miracle, crowded with over 130 figures in 16th-century dress.",
+          "dimensions": "677 cm \u00d7 994 cm",
+          "description": "The largest painting in the Louvre \u2014 a vast Venetian banquet scene depicting Christ's first miracle, crowded with over 130 figures in 16th-century dress.",
           "commonsFile": "Paolo_Veronese_008.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/The_Wedding_at_Cana_(Veronese)" },
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/The_Wedding_at_Cana_(Veronese)"
+          },
           "scale": 1.6,
           "spotlight": "featured"
         },
@@ -69,10 +85,13 @@
           "artist": "Caravaggio",
           "year": "c. 1594",
           "medium": "Oil on canvas",
-          "dimensions": "115 cm × 150 cm",
-          "description": "A gypsy fortune teller slips a ring from a young dandy's finger as she reads his palm — an early example of Caravaggio's street-level realism and psychological drama.",
+          "dimensions": "115 cm \u00d7 150 cm",
+          "description": "A gypsy fortune teller slips a ring from a young dandy's finger as she reads his palm \u2014 an early example of Caravaggio's street-level realism and psychological drama.",
           "commonsFile": "Caravaggio_(Michelangelo_Merisi)_-_Good_Luck_-_Google_Art_Project.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/The_Fortune_Teller_(Caravaggio)" },
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/The_Fortune_Teller_(Caravaggio)"
+          },
           "scale": 1
         }
       ]
@@ -86,26 +105,32 @@
         {
           "id": "liberty-leading-the-people",
           "title": "Liberty Leading the People",
-          "artist": "Eugène Delacroix",
+          "artist": "Eug\u00e8ne Delacroix",
           "year": "1830",
           "medium": "Oil on canvas",
-          "dimensions": "260 cm × 325 cm",
+          "dimensions": "260 cm \u00d7 325 cm",
           "description": "Painted the same year it depicts, this allegory of the July Revolution shows a bare-breasted Liberty carrying the tricolor over the barricades and the dead.",
-          "commonsFile": "La_Liberté_guidant_le_peuple_-_Eugène_Delacroix_-_Musée_du_Louvre_Peintures_RF_129_-_après_restauration_2024.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/Liberty_Leading_the_People" },
+          "commonsFile": "La_Libert\u00e9_guidant_le_peuple_-_Eug\u00e8ne_Delacroix_-_Mus\u00e9e_du_Louvre_Peintures_RF_129_-_apr\u00e8s_restauration_2024.jpg",
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/Liberty_Leading_the_People"
+          },
           "scale": 1.2,
           "spotlight": "featured"
         },
         {
           "id": "raft-of-the-medusa",
           "title": "The Raft of the Medusa",
-          "artist": "Théodore Géricault",
-          "year": "1818–1819",
+          "artist": "Th\u00e9odore G\u00e9ricault",
+          "year": "1818\u20131819",
           "medium": "Oil on canvas",
-          "dimensions": "490 cm × 716 cm",
+          "dimensions": "490 cm \u00d7 716 cm",
           "description": "Survivors of a real 1816 shipwreck cling to a makeshift raft in this monumental, scandal-provoking indictment of naval incompetence and human desperation.",
-          "commonsFile": "JEAN_LOUIS_THÉODORE_GÉRICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre,_1818-19).jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa" },
+          "commonsFile": "JEAN_LOUIS_TH\u00c9ODORE_G\u00c9RICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre,_1818-19).jpg",
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+          },
           "scale": 1.5,
           "spotlight": "featured"
         },
@@ -113,12 +138,15 @@
           "id": "coronation-of-napoleon",
           "title": "The Coronation of Napoleon",
           "artist": "Jacques-Louis David",
-          "year": "1805–1807",
+          "year": "1805\u20131807",
           "medium": "Oil on canvas",
-          "dimensions": "621 cm × 979 cm",
+          "dimensions": "621 cm \u00d7 979 cm",
           "description": "An enormous, meticulously documented record of Napoleon crowning Empress Josephine at Notre-Dame in 1804, painted as state propaganda by the era's leading Neoclassicist.",
           "commonsFile": "Jacques-Louis_David_-_The_Coronation_of_Napoleon_(1805-1807).jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/The_Coronation_of_Napoleon" },
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/The_Coronation_of_Napoleon"
+          },
           "scale": 1.6
         },
         {
@@ -127,10 +155,13 @@
           "artist": "Jacques-Louis David",
           "year": "1784",
           "medium": "Oil on canvas",
-          "dimensions": "330 cm × 425 cm",
-          "description": "Three brothers swear to defend Rome as their father raises their swords — a Neoclassical manifesto of civic duty and stoic sacrifice that anticipated the Revolution.",
-          "commonsFile": "Le_Serment_des_Horaces_-_Jacques-Louis_David_-_Musée_du_Louvre_Peintures_INV_3692_;_MR_1432.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/Oath_of_the_Horatii" },
+          "dimensions": "330 cm \u00d7 425 cm",
+          "description": "Three brothers swear to defend Rome as their father raises their swords \u2014 a Neoclassical manifesto of civic duty and stoic sacrifice that anticipated the Revolution.",
+          "commonsFile": "Le_Serment_des_Horaces_-_Jacques-Louis_David_-_Mus\u00e9e_du_Louvre_Peintures_INV_3692_;_MR_1432.jpg",
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/Oath_of_the_Horatii"
+          },
           "scale": 1.2
         }
       ]
@@ -145,12 +176,15 @@
           "id": "venus-de-milo",
           "title": "Venus de Milo",
           "artist": "Unknown (attrib. Alexandros of Antioch)",
-          "year": "c. 150–125 BC",
+          "year": "c. 150\u2013125 BC",
           "medium": "Marble",
           "dimensions": "204 cm tall",
-          "description": "Discovered on the island of Milos in 1820, this armless Aphrodite has become the archetype of classical beauty despite — or because of — its missing limbs.",
+          "description": "Discovered on the island of Milos in 1820, this armless Aphrodite has become the archetype of classical beauty despite \u2014 or because of \u2014 its missing limbs.",
           "commonsFile": "Front_views_of_the_Venus_de_Milo.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/Venus_de_Milo" },
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/Venus_de_Milo"
+          },
           "scale": 1.1,
           "spotlight": "featured"
         },
@@ -158,12 +192,15 @@
           "id": "winged-victory",
           "title": "Winged Victory of Samothrace",
           "artist": "Unknown",
-          "year": "c. 200–190 BC",
+          "year": "c. 200\u2013190 BC",
           "medium": "Marble",
           "dimensions": "328 cm tall (with base)",
           "description": "The goddess Nike alights on a ship's prow, her drapery whipped by sea wind rendered in stone. Headless and armless, she still commands the top of the Daru staircase.",
           "commonsFile": "Victoire_de_Samothrace_-_Musee_du_Louvre_-_20190812.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/Winged_Victory_of_Samothrace" },
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/Winged_Victory_of_Samothrace"
+          },
           "scale": 1.4,
           "spotlight": "featured"
         },
@@ -174,21 +211,27 @@
           "year": "c. 100 BC",
           "medium": "Marble",
           "dimensions": "199 cm tall",
-          "description": "A fighter lunges mid-parry, every tendon carved in tension — a Hellenistic showpiece of anatomical bravura once owned by the Borghese family in Rome.",
+          "description": "A fighter lunges mid-parry, every tendon carved in tension \u2014 a Hellenistic showpiece of anatomical bravura once owned by the Borghese family in Rome.",
           "commonsFile": "Borghese_Gladiator,_Louvre_Museum,_Paris_2_October_2014.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/Borghese_Gladiator" },
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/Borghese_Gladiator"
+          },
           "scale": 1
         },
         {
           "id": "diana-of-versailles",
           "title": "Diana of Versailles",
           "artist": "Roman copy after a Greek original (attrib. Leochares)",
-          "year": "1st–2nd century AD",
+          "year": "1st\u20132nd century AD",
           "medium": "Marble",
           "dimensions": "211 cm tall",
           "description": "The huntress goddess strides forward with a stag at her side, a Roman marble copy of a lost Greek bronze once kept in the royal gardens at Versailles.",
           "commonsFile": "Diana_of_Versailles.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/Diana_of_Versailles" },
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/Diana_of_Versailles"
+          },
           "scale": 1
         }
       ]
@@ -203,24 +246,30 @@
           "id": "the-lacemaker",
           "title": "The Lacemaker",
           "artist": "Johannes Vermeer",
-          "year": "c. 1669–1671",
+          "year": "c. 1669\u20131671",
           "medium": "Oil on canvas, mounted on panel",
-          "dimensions": "24.5 cm × 21 cm",
-          "description": "One of Vermeer's smallest works and among his most quietly intense — a young woman bent in total concentration over bobbin lace, thread rendered as flecks of pure pigment.",
+          "dimensions": "24.5 cm \u00d7 21 cm",
+          "description": "One of Vermeer's smallest works and among his most quietly intense \u2014 a young woman bent in total concentration over bobbin lace, thread rendered as flecks of pure pigment.",
           "commonsFile": "Johannes_Vermeer_-_The_lacemaker_(c.1669-1671).jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/The_Lacemaker_(Vermeer)" },
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/The_Lacemaker_(Vermeer)"
+          },
           "scale": 0.7
         },
         {
           "id": "gabrielle-destrees",
-          "title": "Gabrielle d'Estrées and One of Her Sisters",
+          "title": "Gabrielle d'Estr\u00e9es and One of Her Sisters",
           "artist": "Unknown, Fontainebleau School",
           "year": "c. 1594",
           "medium": "Oil on panel",
-          "dimensions": "96 cm × 125 cm",
-          "description": "Two women sit in a bath, one pinching the other's nipple in a gesture read as announcing a royal pregnancy — one of the most enigmatic paintings in French art.",
-          "commonsFile": "Gabrielle_d'Estrées_et_une_de_ses_sœurs_-_Musée_du_Louvre_Peintures_RF_1937_1.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/Gabrielle_d'Estr%C3%A9es_and_One_of_Her_Sisters" },
+          "dimensions": "96 cm \u00d7 125 cm",
+          "description": "Two women sit in a bath, one pinching the other's nipple in a gesture read as announcing a royal pregnancy \u2014 one of the most enigmatic paintings in French art.",
+          "commonsFile": "Gabrielle_d'Estr\u00e9es_et_une_de_ses_s\u0153urs_-_Mus\u00e9e_du_Louvre_Peintures_RF_1937_1.jpg",
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/Gabrielle_d'Estr%C3%A9es_and_One_of_Her_Sisters"
+          },
           "scale": 1
         }
       ]
@@ -235,12 +284,15 @@
           "id": "seated-scribe",
           "title": "Seated Scribe",
           "artist": "Unknown",
-          "year": "c. 2600–2350 BC",
+          "year": "c. 2600\u20132350 BC",
           "medium": "Painted limestone, rock crystal and copper inlay",
           "dimensions": "53.7 cm tall",
           "description": "An Old Kingdom scribe sits cross-legged with papyrus on his lap, his rock-crystal eyes giving the 4,000-year-old limestone an unsettlingly alert gaze.",
-          "commonsFile": "Le_Scribe_accroupi_-_Musée_du_Louvre_Antiquités_égyptiennes_E_3023.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/Seated_Scribe" },
+          "commonsFile": "Le_Scribe_accroupi_-_Mus\u00e9e_du_Louvre_Antiquit\u00e9s_\u00e9gyptiennes_E_3023.jpg",
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/Seated_Scribe"
+          },
           "scale": 0.8,
           "spotlight": "featured"
         },
@@ -248,12 +300,15 @@
           "id": "great-sphinx-of-tanis",
           "title": "Great Sphinx of Tanis",
           "artist": "Unknown",
-          "year": "c. 2600–1897 BC",
+          "year": "c. 2600\u20131897 BC",
           "medium": "Pink granite",
-          "dimensions": "183 cm × 480 cm",
+          "dimensions": "183 cm \u00d7 480 cm",
           "description": "One of the largest sphinxes outside Egypt, this granite colossus guards the entrance to the Egyptian antiquities crypt much as it once guarded a temple at Tanis.",
-          "commonsFile": "Grand_sphinx_de_Tanis_-_Musée_du_Louvre_Antiquités_égyptiennes_N_23_;_A_23_;_Salt_3837.jpg",
-          "source": { "collection": "Musée du Louvre, Paris", "url": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Tanis" },
+          "commonsFile": "Grand_sphinx_de_Tanis_-_Mus\u00e9e_du_Louvre_Antiquit\u00e9s_\u00e9gyptiennes_N_23_;_A_23_;_Salt_3837.jpg",
+          "source": {
+            "collection": "Mus\u00e9e du Louvre, Paris",
+            "url": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Tanis"
+          },
           "scale": 1.5,
           "spotlight": "featured"
         }
