@@ -1,0 +1,42 @@
+{
+  "id": "brera",
+  "name": "Pinacoteca di Brera",
+  "city": "Milan",
+  "country": "Italy",
+  "tagline": "Milan's great picture gallery, built from Napoleonic-era confiscations of church and convent art.",
+  "fullyBuilt": false,
+  "rooms": [
+    {
+      "id": "italian-romanticism",
+      "name": "Italian Romanticism",
+      "wallTone": "warm",
+      "artworks": [
+        {
+          "id": "the-kiss",
+          "title": "The Kiss",
+          "artist": "Francesco Hayez",
+          "year": "1859",
+          "medium": "Oil on canvas",
+          "dimensions": "112 cm × 88 cm",
+          "description": "A cloaked couple embrace on a stairway in this defining image of Italian Romanticism, widely read as an allegory for the Risorgimento's political alliances.",
+          "commonsFile": "El_Beso_(Pinacoteca_de_Brera,_Milán,_1859).jpg",
+          "source": { "collection": "Pinacoteca di Brera, Milan", "url": "https://en.wikipedia.org/wiki/The_Kiss_(Hayez)" },
+          "scale": 1,
+          "spotlight": "featured"
+        },
+        {
+          "id": "marriage-of-the-virgin",
+          "title": "The Marriage of the Virgin",
+          "artist": "Raphael",
+          "year": "1504",
+          "medium": "Oil on panel",
+          "dimensions": "174 cm × 121 cm",
+          "description": "A young Raphael's breakthrough altarpiece, its perfectly symmetrical temple and calm perspective marking his arrival as heir to Perugino's generation.",
+          "commonsFile": "Raffaello_-_Spozalizio_-_Web_Gallery_of_Art.jpg",
+          "source": { "collection": "Pinacoteca di Brera, Milan", "url": "https://en.wikipedia.org/wiki/The_Marriage_of_the_Virgin_(Raphael)" },
+          "scale": 1
+        }
+      ]
+    }
+  ]
+}
